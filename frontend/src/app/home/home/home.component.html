@@ -1,0 +1,12 @@
+<!-- home.component.html -->
+<div style="text-align: center;">
+<h1>List of employees</h1>
+<nav>
+    <button [routerLink]="['/employee/employee-salary-list']">View Salary Information</button>
+    <button (click)="logout()">Logout</button>
+    <button [routerLink]="['/auth/login']">Login</button>
+</nav>
+<ul>
+    <p *ngFor="let employee of employees"> {{ employee }} </p>
+</ul>
+</div>

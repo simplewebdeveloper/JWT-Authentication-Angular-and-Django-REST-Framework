@@ -1,0 +1,15 @@
+<!-- login.component.html -->
+<div style="text-align: center;">
+    <h1>Login to the app</h1>
+    <nav>
+        <button [routerLink]="['/']">Return to home</button>
+    </nav>
+    <ul>
+        <form [formGroup]="userLoginForm" (ngSubmit)="userLoginFormSubmit()">
+            <input formControlName="username" type="text" placeholder="Username"><br/>
+            <input formControlName="password" type="password" placeholder="Password"><br/>
+            <input type="submit" value="Login"><br/>
+        </form>
+    </ul>
+    </div>
+    

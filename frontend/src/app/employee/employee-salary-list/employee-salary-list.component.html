@@ -1,0 +1,14 @@
+<!-- employee-salary-list.component.html -->
+<div style="text-align: center;">
+    <h1>List of employees and salaries</h1>
+    <nav>
+        <button [routerLink]="['/']">Return to home</button>
+        <button (click)="logout()">Logout</button>
+        <button [routerLink]="['/auth/login']">Login</button>
+    </nav>
+    <ul>
+        <p *ngFor="let employeeAndSalary of employeesAndSalaries|keyvalue"><span>{{ employeeAndSalary.key }}</span> - <span>{{ employeeAndSalary.value }}</span></p>
+      
+    </ul>
+    </div>
+    
